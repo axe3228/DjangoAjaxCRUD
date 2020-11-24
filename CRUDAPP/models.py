@@ -6,5 +6,5 @@ class StudentData(models.Model):
     name=models.CharField(max_length=255)
     email=models.CharField(max_length=255)
     gender=models.CharField(max_length=255)
-    created_at=models.DateTimeField()
+    created_at=models.DateTimeField(auto_now_add=True)
     objects=models.Manager()
